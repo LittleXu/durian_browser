@@ -18,6 +18,7 @@ struct BookmarkView: View {
                 Text(bookmark.name)
                     .font(.headline)
                     .fontWeight(.bold)
+                    .foregroundColor(.black)
                 Text(bookmark.url)
                     .font(.subheadline)
                     .foregroundColor(.gray)
@@ -30,9 +31,6 @@ struct BookmarkView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color.gray.opacity(0.1))
         .cornerRadius(10)
-//        .padding(.horizontal, 8)
-        
-       
     }
 }
 

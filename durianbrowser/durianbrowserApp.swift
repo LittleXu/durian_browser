@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct durianbrowserApp: App {
+    
+    @StateObject var store = BookmarkStore()
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(store) // 注入全局环境对象
         }
     }
 }
